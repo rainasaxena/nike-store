@@ -80,3 +80,18 @@
     font-size:15px;
     font-weight: 100;
 }
+
+ @media screen and  (min-width: 480px) and (max-width: 1024px){
+    
+    .main-heading h1{
+        font-size: 60px;
+    }
+
+    .glance .boxes .box h1{
+        font-size:40px;
+    }
+
+    .glance .boxes .box p{
+        font-size:11px;
+    }
+}

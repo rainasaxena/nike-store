@@ -1,8 +1,35 @@
+.nav-links{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .nav-links a:visited, a:active, a:link{
     text-decoration: none;
-    color:black
+    color:black;
+    
 }
 
 .nav-links a:hover{
     color:var(--red);
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px){
+
+    .container{
+        padding:10px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .nav-links{
+        display:flex;
+        /* flex-direction: column; */
+        /* justify-contnt: space-around; */
+    }
+
+    .nav-links a {
+        margin-right: 20px;
+        font-size:20px; /* Add some spacing between list items */
+    }
 }
