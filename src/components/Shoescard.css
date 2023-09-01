@@ -1,0 +1,93 @@
+
+.heading{
+    display:flex;
+    justify-content: center;
+    padding:20px;
+}
+
+.container-card{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-main{
+    position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+    flex-direction:column;
+	margin: 40px 0;
+}
+
+.card-main .card{
+    position: relative;
+	width: 300px;
+	height: 430px;
+    
+	background: rgb(245, 245, 245);
+	margin: 20px;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    transition: 0.5s;
+}
+
+.card-main .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.card-main .card:hover{
+	/* box-shadow: 0 15px 30px var(--red); */
+	transform: translateY(-5px);
+	box-shadow: 0 5px 35px rgba(50, 50, 50, 0.5);
+	
+}
+
+.card-main .card:hover .content {
+	transform: translateY(-10px);
+}
+
+.card-main .card .content .imgBx {
+	position: relative;
+	width: 250px;
+	height: 260px;
+	overflow: hidden;
+}
+
+.card-main .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+.card-main .card .content .contentBx h3 {
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.card-main .card .content .contentBx h3 span {
+	font-size: 13px;
+	font-weight: 300;
+	text-transform: initial;
+}

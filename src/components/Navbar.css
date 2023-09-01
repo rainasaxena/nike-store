@@ -1,0 +1,8 @@
+.nav-links a:visited, a:active, a:link{
+    text-decoration: none;
+    color:black
+}
+
+.nav-links a:hover{
+    color:var(--red);
+}
