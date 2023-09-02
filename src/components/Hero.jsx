@@ -9,7 +9,7 @@ const Hero = () => {
     </div>
 
     <div className="HeroContent">
-        <h1>NIKE.<br/>JUST DO IT.</h1>
+        <h1>NIKE<br/>JUST DO IT.</h1>
         <p>Willpower knows no obstacles. Find your greatness. Strike fear or get struck. </p>
 
         <div className="hero-btn">

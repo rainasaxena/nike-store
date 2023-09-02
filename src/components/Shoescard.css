@@ -91,3 +91,14 @@
 	font-weight: 300;
 	text-transform: initial;
 }
+
+
+@media screen and (max-width: 480px){
+	.card-main .card:hover{
+		/* box-shadow: 0 15px 30px var(--red); */
+		transform: translateY(-5px);
+		box-shadow: 0 5px 35px rgba(100, 100, 100, 0.5);
+		
+	}
+    
+}
