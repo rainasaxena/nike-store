@@ -32,7 +32,7 @@ const Contact = () => {
 
             
               <label for="email" className='label'>E-mail</label>
-              <input type="text"></input>
+              <input type="email"></input>
             
 
             

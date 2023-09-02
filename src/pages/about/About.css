@@ -110,6 +110,7 @@
         align-items: center;
         justify-content: center;
         gap:20px;
+        /* padding:10px; */
     }
 
     .glance .boxes .box h1{
