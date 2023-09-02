@@ -61,15 +61,28 @@
 	position: relative;
 	width: 250px;
 	height: 260px;
+	display:flex;
+	align-items: center;
+	justify-content: ;
 	overflow: hidden;
 }
 
 .card-main .card .content .imgBx img {
 	position: absolute;
+	transition: 0.5s;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
+}
+
+.card-main .card .content .imgBx img:hover{
+	position: absolute;
+	top: 0;
+	left: 2px;
+	width: 275px;
+	height: 275px;
 	object-fit: cover;
 }
 
