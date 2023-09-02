@@ -81,6 +81,46 @@
     font-weight: 100;
 }
 
+
+@media screen and (max-width: 480px){
+    .main-heading h1{
+        font-size: 60px;
+        margin-bottom: -20px;
+    }
+
+    .desc1 .text{
+        font-size:20px;
+    }
+
+    .desc2 h3{
+        font-size: 25px;
+    }
+
+    .desc2 h2{
+        font-size:20px;
+    }
+    
+    .glance h3{
+        font-size:30px;
+    }
+
+    .glance .boxes{
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+    }
+
+    .glance .boxes .box h1{
+        font-size: 40px;
+    }
+
+    .glance .boxes .box p{
+        font-size: 8px;
+    }
+}
+
  @media screen and  (min-width: 480px) and (max-width: 1024px){
     
     .main-heading h1{
