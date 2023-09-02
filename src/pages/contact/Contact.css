@@ -97,17 +97,21 @@ input:hover{
         line-height: 25px;
     }
 
+    .title{
+        margin-left: 5px;
+    }
+
     .soc-btn{
         display: flex;
         gap:20px;
         align-items: center;
-        margin-left: 70px;
+        margin-left: 35px;
         margin-top:2px;        
     }
 
     .contact-content{ 
         height:405px;
-        margin-left:550px;
+        margin-left:430px;
         display:flex;
         align-items: center;
         justify-content:center;
@@ -126,4 +130,5 @@ input:hover{
 
 
 }
+
 
