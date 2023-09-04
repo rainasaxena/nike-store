@@ -21,7 +21,7 @@ const Navbar = () => {
          </ul>
 
           {/*Button */}
-         {/* <button>Login</button> */}
+         <button>Login</button>
 
       </nav>
       {/* Navbar Ends */}
