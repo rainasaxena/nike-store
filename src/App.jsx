@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Contact from './pages/contact/Contact';
 import Explore from './pages/explore/Explore'
 import About from './pages/about/About'
+import LoginPage from './pages/LoginPage';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route exact path='/explore' element={<Explore />}></Route>
         <Route exact path='/about' element={<About />}></Route>
         <Route exact path='/' element={<Hero />}></Route>
+        <Route exact path='/login' element={<LoginPage/>}></Route> 
       </Routes>
       
       {/* <Hero/> */}

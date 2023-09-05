@@ -21,7 +21,11 @@ const Navbar = () => {
          </ul>
 
           {/*Button */}
-         <button>Login</button>
+         <button>
+         <Link to={'/login'}>
+          Login
+          </Link>
+          </button>
 
       </nav>
       {/* Navbar Ends */}
