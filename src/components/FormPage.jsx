@@ -1,12 +1,17 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import './FormPage.css'
 
 const FormPage = () => {
 
-  // const userData={username, password};
+  const [errorV, setErrorV] = useState(false);
+  const [errorMessage,setErrorMessage]= useState('')
+  
+  const navigate= useNavigate();
+
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
-
+  
   const handleSubmit = async (e) =>{   
     // console.log(userName,password);
     e.preventDefault();
@@ -19,17 +24,30 @@ const FormPage = () => {
     
           username: userName,
           password: password,
-          // expiresInMins: 60, // optional
         })
       });
       // .then(res => res.json())
       // .then(console.log(res));
       const data= await res.json();
       console.log(data);
+
+      if (res.ok) {
+        navigate('/');
+      }
+
+      else{
+          setErrorV(true);
+          setErrorMessage(data['message']);
+          console.log(errorMessage);
+
+      }
+
     }
     catch(error){
       console.log(error);
     }
+
+
   }
 
 
@@ -51,6 +69,8 @@ const FormPage = () => {
             <input type="password" id='password' name='password' required value={password} onChange={(e) => setPassword(e.target.value)}/> <br/>
 
             <button id='submit-button' type="submit" >Submit</button>
+
+            <h3>{errorMessage}</h3>
           </form>
         </div>
 
